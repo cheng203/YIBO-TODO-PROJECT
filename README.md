@@ -34,7 +34,7 @@ This project utilizes technique stacks including
 
 ​																Figure 2: Modal for Adding New Task 
 
-<img src="https://github.com/cheng203/YIBO-TODO-PROJECT/blob/master/img/3.png />
+<img src="https://github.com/cheng203/YIBO-TODO-PROJECT/blob/master/img/3.png"/>
 
 ​												Figure 3: Modal for Editing Existing Unfinished Task
 
