@@ -26,19 +26,19 @@ This project utilizes technique stacks including
 
   
 
-![1](/Users/administrator/Desktop/Projects/todo_project/client/img/1.png)
+<img src="https://github.com/cheng203/YIBO-TODO-PROJECT/blob/master/img/1.png" />
 
 ​											Figure 1: Overall View of Front End
 
-<img src="/Users/administrator/Desktop/Screen Shot 2020-09-08 at 3.58.20 PM.png" alt="Screen Shot 2020-09-08 at 3.58.20 PM" style="zoom: 150%;" />
+<img src="https://github.com/cheng203/YIBO-TODO-PROJECT/blob/master/img/2.png" />
 
 ​																Figure 2: Modal for Adding New Task 
 
-<img src="/Users/administrator/Desktop/Screen Shot 2020-09-08 at 3.58.30 PM.png" alt="Screen Shot 2020-09-08 at 3.58.30 PM" style="zoom:200%;" />
+<img src="https://github.com/cheng203/YIBO-TODO-PROJECT/blob/master/img/3.png />
 
 ​												Figure 3: Modal for Editing Existing Unfinished Task
 
-<img src="/Users/administrator/Desktop/Screen Shot 2020-09-08 at 3.58.39 PM.png" alt="Screen Shot 2020-09-08 at 3.58.39 PM" style="zoom:200%;" />
+<img src="https://github.com/cheng203/YIBO-TODO-PROJECT/blob/master/img/4.png" />
 
 ​										Figure 4: Added Function for Each Unfinished Task and Pagination
 
