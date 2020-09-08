@@ -1,68 +1,79 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## YIBO's customerized TO-DO application
 
-In the project directory, you can run:
+This project utilizes technique stacks including
 
-### `yarn start`
+- React.js
+- Ant Design
+- Node.js
+- Express
+- Sequelize
+- MySql
+- Axios
+- Body-parser
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**React.js, Ant Design, Node.js, Express, Sequelize, MySql**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+​	
 
-### `yarn test`
+- **Functionality Analysis**
+  - allow user to add new to-do task including task title, task description, task deadline and task status (todo, complete)
+  - for each to-do task, allow user to edit its title, description and deadline, mark as complete and then will move to the right complete list, delete directly without marking it as complete
+  - once to-do task is done, it will be moved to complete list and allow user to decide if the specific task should be deleted
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Front UI layout and component using Ant Design (4.X)**
 
-### `yarn build`
+  
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="/Users/administrator/Desktop/Screen Shot 2020-09-08 at 3.58.09 PM.png" alt="Screen Shot 2020-09-08 at 3.58.09 PM" style="zoom: 200%;" />
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+​											Figure 1: Overall View of Front End
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="/Users/administrator/Desktop/Screen Shot 2020-09-08 at 3.58.20 PM.png" alt="Screen Shot 2020-09-08 at 3.58.20 PM" style="zoom: 150%;" />
 
-### `yarn eject`
+​																Figure 2: Modal for Adding New Task 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<img src="/Users/administrator/Desktop/Screen Shot 2020-09-08 at 3.58.30 PM.png" alt="Screen Shot 2020-09-08 at 3.58.30 PM" style="zoom:200%;" />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+​												Figure 3: Modal for Editing Existing Unfinished Task
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<img src="/Users/administrator/Desktop/Screen Shot 2020-09-08 at 3.58.39 PM.png" alt="Screen Shot 2020-09-08 at 3.58.39 PM" style="zoom:200%;" />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+​										Figure 4: Added Function for Each Unfinished Task and Pagination
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- **Backend API Design (Accomplished by Node.js under Express Framework)**
+  - create new task object
+    - url (http://localhost:8080/create)
+    - method: POST
+    - params:
+      - name
+      - deadline
+      - content
+      - status	
+  - update a TO-DO list
+    - url (http://localhost:8080/update)
+    - method: POST
+    - params:
+      - name
+      - deadline
+      - content	
+  - update TO-DO task from unfinished to finished
+    - url (http://localhost:8080/update_status)
+    - method: POST
+    - params:
+      - id
+      - status
+  - delete a task
+    - url (http://localhost:8080/delete)
+    - method: POST
+    - params:
+      - id	
+  - list finish&unfinish tasks stored in MySql based up status and page number
+    - url (http://localhost:8080/list/status/pageNum)
+    - method: get
+    - params:
+      - status
+      - page number	
