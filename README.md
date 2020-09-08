@@ -26,7 +26,7 @@ This project utilizes technique stacks including
 
   
 
-<img src="/Users/administrator/Desktop/Screen Shot 2020-09-08 at 3.58.09 PM.png" alt="Screen Shot 2020-09-08 at 3.58.09 PM" style="zoom: 200%;" />
+![1](/Users/administrator/Desktop/Projects/todo_project/client/img/1.png)
 
 ​											Figure 1: Overall View of Front End
 
