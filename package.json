@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "add": "^2.0.6",
+    "antd": "^4.6.3",
+    "babel-plugin-import": "^1.13.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-router": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "yarn": "^1.22.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,6 +35,23 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd",
+          "style": "css"
+        }
+      ]
+    ],
+    "presets": [
+      "react-app"
     ]
   }
 }
